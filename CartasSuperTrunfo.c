@@ -1,5 +1,4 @@
 #include <stdio.h>
-
 int main() {
     // --- Declaração de todas as variáveis no início ---
     char estado1[3], estado2[3];
