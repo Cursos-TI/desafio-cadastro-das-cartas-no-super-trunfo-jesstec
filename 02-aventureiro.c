@@ -87,4 +87,4 @@ int main() {
     densidade2 = populacao2 / area2;
     pibPerCapita2 = pib2 / populacao2;
     printf("Densidade populacional:%.2f\n", densidade2);
-    p
+    printf("Pib per capito:%.2f\n", pibPerCapita2);
