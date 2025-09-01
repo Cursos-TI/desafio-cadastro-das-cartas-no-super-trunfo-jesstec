@@ -109,17 +109,7 @@ int main() {
 	printf("Densidade populacional:%d\n", densidade1<densidade2);
 	printf("Pib per capito:%d\n", pibPerCapita1>pibPerCapita2);
 	printf("Super poder:%d", Super_poder1>Super_poder2);
-   
-   printf("\n--------comparacao dos atributos------\n");
-   printf("Populacao_1:%d", populacao1);
-   printf("Populacao_2:%d", populacao2);
-   if(populacao1>populacao2){
-   printf("Resultado: carta 1 (%s) GANHOU!!\n", cidade1);
-  
-  } else if(populacao2>populacao1){
-    printf("Resultado: A carta 2 (%s) GANHOU!!\n!", cidade2);
-    
-}
+
 	return 0;
 }
 
