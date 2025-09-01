@@ -1,15 +1,17 @@
-#include <stdio.h>
+ #include <stdio.h>
 int main() {
     // --- Declaração de todas as variáveis no início ---
     char estado1[3], estado2[3];
     char codigo1[3], codigo2[3];
     char cidade1[50], cidade2[50];
-    int populacao1, populacao2;
+   unsigned long long int populacao1, populacao2;
     float area1, area2;
     float pib1, pib2;
     int pontos1, pontos2;
+    float densidade1, densidade2;
+    float pibPerCapita1, pibPerCapita2;
 
-    // --- Carta 1 ---
+	// --- Carta 1 ---
     printf("---- Carta 1 ----\n");
 
     printf("Digite o nome do estado: ");
@@ -19,7 +21,7 @@ int main() {
     scanf("%s", codigo1);
 
     printf("Digite o nome da cidade: ");
-    scanf("%s", cidade1)
+    scanf("%s", cidade1);
     
     printf ("Digite a população:");
     scanf("%d", &populacao1);
@@ -56,8 +58,10 @@ int main() {
 
     printf("Digite o número de pontos turísticos: ");
     scanf("%d", &pontos2);
-
-printf("\n--- Carta1 ---\n");
+    
+	// carta1
+   
+    printf("\n--- Carta1 ---\n");
     printf("Estado: %s\n", estado1);
     printf("Código: %s\n", codigo1);
     printf("Cidade: %s\n", cidade1);
@@ -65,8 +69,14 @@ printf("\n--- Carta1 ---\n");
     printf("Área: %.2f\n", area1);
     printf("PIB: %.2f\n", pib1);
     printf("Pontos turísticos: %d\n", pontos1);
-
-   printf("\n--- Carta2 ---\n");
+	densidade1 = populacao1 / area1;
+    pibPerCapita1 = pib1 / populacao1;
+    printf("Densidade populacional:%.2f\n", densidade1);
+    printf("Pib per capito:%.2f\n", pibPerCapita1);
+   
+   //carta2
+   
+    printf("\n--- Carta2 ---\n");
     printf("Estado: %s\n", estado2);
     printf("Código: %s\n", codigo2);
     printf("Cidade: %s\n", cidade2);
@@ -74,6 +84,7 @@ printf("\n--- Carta1 ---\n");
     printf("Área: %.2f\n", area2);
     printf("PIB: %.2f\n", pib2);
     printf("Pontos turísticos: %d\n", pontos2);
-   
-    return 0;
-}
+    densidade2 = populacao2 / area2;
+    pibPerCapita2 = pib2 / populacao2;
+    printf("Densidade populacional:%.2f\n", densidade2);
+    printf("Pib per capito:%.2f\n", pibPerCapita2);
